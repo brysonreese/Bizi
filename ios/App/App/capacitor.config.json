@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Bizi",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

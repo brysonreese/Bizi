@@ -1,0 +1,7 @@
+{
+  "name": "Bizi",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
