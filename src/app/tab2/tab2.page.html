@@ -13,5 +13,74 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-toolbar>
+    <ion-segment value="all">
+      <ion-segment-button value="all">
+        Upcoming
+      </ion-segment-button>
+      <ion-segment-button value="favorites">
+        Completed
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+  <ion-card>
+    <ion-item href="#">
+      <ion-label>Rent</ion-label>
+      <ion-label>|</ion-label>
+      <ion-label>$750</ion-label>
+      <ion-label>|</ion-label>
+      <ion-label>12/01/2021</ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item href="#">
+      <ion-label>Water</ion-label>
+      <ion-label>|</ion-label>
+      <ion-label>$50</ion-label>
+      <ion-label>|</ion-label>
+      <ion-label>12/03/2021</ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item href="#">
+      <ion-label>Wi-Fi</ion-label>
+      <ion-label>|</ion-label>
+      <ion-label>$95</ion-label>
+      <ion-label>|</ion-label>
+      <ion-label>12/28/2021</ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item href="#">
+      <ion-label>Power</ion-label>
+      <ion-label>|</ion-label>
+      <ion-label>$125</ion-label>
+      <ion-label>|</ion-label>
+      <ion-label>12/28/2021</ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-button expand="block">
+      <ion-icon name="add"></ion-icon>
+    </ion-button>
+  </ion-card>
+
+  <!-- fab placed to the (vertical) center and start -->
+  <ion-fab vertical="center" horizontal="start" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="arrow-back-circle"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <!-- fab placed to the (vertical) center and end -->
+  <ion-fab vertical="center" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="arrow-forward-circle"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
