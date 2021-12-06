@@ -3,6 +3,7 @@
     <ion-title>
       Payments
     </ion-title>
+    
   </ion-toolbar>
 </ion-header>
 
@@ -13,5 +14,140 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 5 page"></app-explore-container>
+  <ion-toolbar>
+    <ion-segment value="pending">
+      <ion-segment-button value="pending">
+        Pending
+      </ion-segment-button>
+      <ion-segment-button value="complete">
+        Complete
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+  <!-- Link to VENMO -->
+<ion-item href="https://venmo.com/account/sign-in">
+  <ion-label>
+    Login to Venmo
+  </ion-label>
+</ion-item>
+
+
+  <!-- Incomplete Payments Tab-->
+<ion-list>
+<ion-item color="secondary">
+  <ion-label>
+    Incomplete Payments:
+  </ion-label>
+</ion-item>
+  
+<!-- List of Example Outstanding Charges -->
+<ion-item button (click)="showMore()">
+  <ion-label>
+    In n Out 
+  </ion-label>
+  <ion-icon name="sad-outline"></ion-icon>
+  <ion-icon name="skull-outline"></ion-icon>
+  <ion-icon name="people-circle-outline"></ion-icon>
+  <ion-label text-right></ion-label>
+  <ion-label> $8 </ion-label>
+</ion-item>
+
+<ion-item button (click)="showMore()">
+  <ion-label>
+    Groceries 
+  </ion-label>
+  <ion-icon name="skull-outline"></ion-icon>
+  <ion-icon name="people-circle-outline"></ion-icon>
+  <ion-icon name="sad-outline"></ion-icon>
+  <ion-label text-right></ion-label>
+  <ion-label> $17 </ion-label>
+</ion-item>
+
+<ion-item button (click)="showMore()">
+  <ion-label>
+    Paper Towels 
+  </ion-label>
+  <ion-icon name="people-circle-outline"></ion-icon>
+  <ion-icon name="sad-outline"></ion-icon>
+  <ion-icon name="skull-outline"></ion-icon>
+  <ion-label text-right></ion-label>
+  <ion-label> $4 </ion-label>
+</ion-item>
+
+<ion-item button (click)="showMore()">
+  <ion-label>
+    Lunch 
+  </ion-label>
+  <ion-icon name="skull-outline"></ion-icon>
+  <ion-icon name="sad-outline"></ion-icon>
+  <ion-icon name="people-circle-outline"></ion-icon>
+  <ion-label text-right></ion-label>
+  <ion-label> $12 </ion-label>
+</ion-item>
+
+<ion-item button (click)="showMore()">
+  <ion-label>
+    Soap 
+  </ion-label>
+  <ion-icon name="sad-outline"></ion-icon>
+  <ion-icon name="skull-outline"></ion-icon>
+  <ion-icon name="people-circle-outline"></ion-icon>
+  <ion-label text-right></ion-label>
+  <ion-label text-right> $3 </ion-label>
+</ion-item>
+
+</ion-list>
+
+<!-- Create new payment section -->
+<ion-button expand="block">Create New Payment</ion-button>
+<ion-list>
+  <ion-item>
+    <ion-label>Payment Request Title:</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+</ion-list>
+<ion-list>
+  <ion-item>
+    <ion-label>Payment Amount: $</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+</ion-list> 
+<ion-item>
+  <ion-label> Select Payment Date</ion-label>
+  <ion-datetime value="2021-012-06" min="2021" max="2025"
+    [dayShortNames]="customDayShortNames"
+    displayFormat="DDD. MMM DD, YYYY"
+    monthShortNames="Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec"></ion-datetime>
+</ion-item>
+<ion-list>
+  <ion-item>
+    <ion-label>Roommates Included in Transaction:</ion-label>
+  </ion-item>
+</ion-list> 
+
+<ion-list>
+  <ion-item>
+    <ion-label>Fate</ion-label>
+    <ion-checkbox slot="start"></ion-checkbox>
+    <ion-icon name="sad-outline"></ion-icon>
+  </ion-item>
+  <ion-item>
+    <ion-label>Bryson</ion-label>
+    <ion-checkbox slot="start"></ion-checkbox>
+    <ion-icon name="people-circle-outline"></ion-icon>
+  </ion-item>
+  <ion-item>
+    <ion-label>Connor</ion-label>
+    <ion-checkbox slot="start"></ion-checkbox>
+    <ion-icon name="skull-outline"></ion-icon>
+  </ion-item>
+  <ion-item>
+    <ion-label>Austen</ion-label>
+    <ion-checkbox slot="start"></ion-checkbox>
+    <ion-icon name="person-circle-outline"></ion-icon>
+  </ion-item>
+</ion-list>
+<ion-button color="success">CREATE</ion-button>
+
 </ion-content>
