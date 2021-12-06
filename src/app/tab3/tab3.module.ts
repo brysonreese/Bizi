@@ -7,14 +7,17 @@ import { Tab3Page } from './tab3.page';
 
 import { Tab3PageRoutingModule } from './tab3-routing.module';
 
+import { LoginButtonComponent } from '../login-button/login-button.component';
+
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
     RouterModule.forChild([{ path: '', component: Tab3Page }]),
-    Tab3PageRoutingModule,
+    Tab3PageRoutingModule
   ],
-  declarations: [Tab3Page]
+  declarations: [Tab3Page, LoginButtonComponent],
+  entryComponents: [Tab3Page]
 })
 export class Tab3PageModule {}
