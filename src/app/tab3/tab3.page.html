@@ -2,16 +2,72 @@
   <ion-toolbar>
     <ion-title>
       Home
+      <img src="https://images.app.goo.gl/Vuz7CnT8ZeQAyHBz6">
     </ion-title>
   </ion-toolbar>
+    <!-- Animated Searchbar -->
+    <ion-searchbar animated></ion-searchbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Home</ion-title>
+        <!--Basic: auto-select the icon based on the platform -->
+        <ion-icon name="home"></ion-icon>
+        <ion-icon size = "large"></ion-icon>
+        <!-- Advanced: explicity set the icon for each platform -->
+        <ion-icon ios="ios-home" md="md-home"></ion-icon>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>Bizi</ion-card-subtitle>
+    <ion-card-title>WELCOME HOME</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+  Home is where love resides, memories are created, friends always belong, and laughter never ends
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-item>
+    <ion-icon name="layers-outline" slot="start"></ion-icon>
+    <ion-label>Tasks</ion-label>
+    <ion-button fill="outline" slot="end">View</ion-button>
+  </ion-item>
+
+  <ion-card-content>
+    You have 3 incomplete tasks
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-item>
+    <ion-icon name="people-outline" slot="start"></ion-icon>
+    <ion-label>Roommates</ion-label>
+    <ion-button fill="outline" slot="end">View</ion-button>
+  </ion-item>
+
+  <ion-card-content>
+    Your household contains 4 people
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-item href="#" class="ion-activated">
+    <ion-icon name="warning" slot="start"></ion-icon>
+    <ion-label>WARNING</ion-label>
+    <ion-button fill="outline" slot="end">View</ion-button>
+  </ion-item>
+
+  <ion-card-content>
+    You have 2 upcoming payments
+  </ion-card-content>
+
+</ion-card>
+
 </ion-content>
