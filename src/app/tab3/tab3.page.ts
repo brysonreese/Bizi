@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-tab3',
@@ -7,6 +8,13 @@ import { Component } from '@angular/core';
 })
 export class Tab3Page {
 
-  constructor() {}
+  constructor(private http: HttpClient) {}
+
+  runHttp() {
+    this.http.get('http://brysonreese.duckdns.org:5000/api/v1/users')
+      .subscribe(data => {
+        console.log(data);
+      })
+  }
 
 }

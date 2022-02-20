@@ -25,6 +25,11 @@
   </ion-toolbar>
 
   <ion-card>
+    <ion-item>
+      <ion-icon name="cash-outline" slot="start"></ion-icon>
+      <ion-label>Bills</ion-label>
+      <ion-button fill="outline" slot="end">View</ion-button>
+    </ion-item>
     <ion-item href="#">
       <ion-label>Rent</ion-label>
       <ion-label>|</ion-label>
@@ -32,9 +37,6 @@
       <ion-label>|</ion-label>
       <ion-label>12/01/2021</ion-label>
     </ion-item>
-  </ion-card>
-
-  <ion-card>
     <ion-item href="#">
       <ion-label>Water</ion-label>
       <ion-label>|</ion-label>
@@ -42,9 +44,6 @@
       <ion-label>|</ion-label>
       <ion-label>12/03/2021</ion-label>
     </ion-item>
-  </ion-card>
-
-  <ion-card>
     <ion-item href="#">
       <ion-label>Wi-Fi</ion-label>
       <ion-label>|</ion-label>
@@ -52,9 +51,6 @@
       <ion-label>|</ion-label>
       <ion-label>12/28/2021</ion-label>
     </ion-item>
-  </ion-card>
-
-  <ion-card>
     <ion-item href="#">
       <ion-label>Power</ion-label>
       <ion-label>|</ion-label>
@@ -62,25 +58,29 @@
       <ion-label>|</ion-label>
       <ion-label>12/28/2021</ion-label>
     </ion-item>
-  </ion-card>
-
-  <ion-card>
     <ion-button expand="block">
       <ion-icon name="add"></ion-icon>
     </ion-button>
   </ion-card>
 
-  <!-- fab placed to the (vertical) center and start -->
-  <ion-fab vertical="center" horizontal="start" slot="fixed">
-    <ion-fab-button>
-      <ion-icon name="arrow-back-circle"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
-
-  <!-- fab placed to the (vertical) center and end -->
-  <ion-fab vertical="center" horizontal="end" slot="fixed">
-    <ion-fab-button>
-      <ion-icon name="arrow-forward-circle"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
+  <ion-card>
+    <ion-item>
+      <ion-icon name="construct-outline" slot="start"></ion-icon>
+      <ion-label>Chores</ion-label>
+      <ion-button fill="outline" slot="end">View</ion-button>
+    </ion-item>
+    <ion-item href="#">
+      <ion-label>Dishes</ion-label>
+      <ion-label>|</ion-label>
+      <ion-label>12/01/2021</ion-label>
+    </ion-item>
+    <ion-item href="#">
+      <ion-label>Trash</ion-label>
+      <ion-label>|</ion-label>
+      <ion-label>12/03/2021</ion-label>
+    </ion-item>
+    <ion-button expand="block">
+      <ion-icon name="add"></ion-icon>
+    </ion-button>
+  </ion-card>
 </ion-content>
