@@ -1,18 +1,14 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Login</ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content color="primary" padding>
   <form #form="ngForm" (ngSubmit)="login(form)">
-    <ion-grid>
+    <ion-grid class = "text-center">
       <ion-row color="primary" justify-content-center>
         <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
           <div text-center>
-            <h3>Login</h3>
+            <h3>Sign in to Bizi</h3>
           </div>
-          <div padding>
+          <div class = "text-center">
             <ion-item>
               <ion-input name="email" type="email" placeholder="your@email.com" ngModel required></ion-input>
             </ion-item>
@@ -26,14 +22,15 @@
         </ion-col>
       </ion-row>
       <ion-row>
-        <div text-center>
+        <div class = "text-center">
           If you don't have an account, please 
             <a routerLink='/register'>register</a> 
-            first
+            here
         </div>
     </ion-row>
     </ion-grid>
   </form>
+  <ion-button href="/tabs"> Temporary Button to navigate to tabs </ion-button>
 </ion-content>
 
 
