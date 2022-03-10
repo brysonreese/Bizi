@@ -17,4 +17,18 @@ export class Tab3Page {
       })
   }
 
+  runHttpPost() {
+
+      let post_url = 'http://brysonreese.duckdns.org:5000/api/v1/users/'
+
+      this.http.post(post_url, {
+        name: 'Fate',
+        email: 'email',
+        password: '123'
+      }).toPromise().then((data: any) => {
+        console.log(jwt_decode(data.token))
+      })
+
+  }
+
 }
