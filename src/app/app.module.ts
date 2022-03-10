@@ -9,10 +9,12 @@ import { AppComponent } from './app.component';
 
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
+import { AuthModule } from  './auth/auth.module';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, AuthModule],
   providers: [HttpClient, { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
