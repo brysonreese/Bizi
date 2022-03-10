@@ -14,13 +14,19 @@ const routes: Routes = [
 },      
 
 {
-  path : '',
-  redirectTo : 'login',
-  pathMatch : 'full'   
-},   {
+  
     path: 'register',
-    loadChildren: () => import('./auth/register/register.module').then( m => m.RegisterPageModule)
-  }
+    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
+  },
+  {
+    path: '',
+    redirectTo: 'welcome',
+    pathMatch: 'full'
+  },
+  {
+    path: 'welcome',
+    loadChildren: () => import('./welcome/welcome.module').then( m => m.WelcomePageModule)
+  },
 
 ];
 
